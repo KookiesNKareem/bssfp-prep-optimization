@@ -16,7 +16,7 @@ function read_cached_sequence(path)
 end
 
 native_params() = C.default_sim_params(Dict{String,Any}("gpu"=>true,"precision"=>"f64",
-    "Δt"=>1e-3,"Δt_rf"=>1e-6,"max_block_length"=>64,"max_rf_block_length"=>512))
+    "Δt"=>1e-3,"Δt_rf"=>20e-6,"max_block_length"=>64,"max_rf_block_length"=>512))
 function native_discretize(seq)
     params = native_params()
     d=discretize(seq; sampling_rule=C.simulation_sampling_rule(params["sim_method"],params), freq_in_phase=params["freq_in_phase"])

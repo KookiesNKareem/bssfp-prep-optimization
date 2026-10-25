@@ -52,7 +52,7 @@ spin order to add a field map. The current acquisition model supports the exampl
 1.5 mm, 96-partition geometry, five dummy heartbeats, and 60 bpm; other protocols
 require adapting that model.
 
-`src/` contains supporting functions; `deps/` pins KomaMRI. Optimization uses
-1 µs RF integration and full-phantom simulation uses 20 µs.
+`src/` contains supporting functions; `deps/` pins KomaMRI. Optimization and
+full-phantom simulation both use 20 µs RF integration.
 
 MIT license; KomaMRI retains its own MIT license.

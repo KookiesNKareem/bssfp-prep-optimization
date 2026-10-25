@@ -49,7 +49,7 @@ end
 function input_stamp()
     files=filter(!isnothing,(conventional_path,initial_path,phantom_path,b0_map))
     (;files=[(abspath(p),mtime(p),filesize(p)) for p in files],gains=copy(b1_gains),voxels,
-      koma=string(Base.pkgversion(N.C)),model="joint_p8_heatmap")
+      koma=string(Base.pkgversion(N.C)),rf_step=N.native_params()["Δt_rf"],model="joint_p8_heatmap")
 end
 
 function read_b0(p)

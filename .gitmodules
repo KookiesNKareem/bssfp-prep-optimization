@@ -1,0 +1,3 @@
+[submodule "deps/KomaMRI"]
+	path = deps/KomaMRI
+	url = https://github.com/JuliaHealth/KomaMRI.jl.git

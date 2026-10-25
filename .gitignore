@@ -1,0 +1,5 @@
+.tmp/
+results*/
+LocalPreferences.toml
+*.log
+.DS_Store
